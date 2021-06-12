@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { w3cwebsocket as W3CWebSocket } from "websocket";
 import * as moment from 'moment';
+import Charts from './component/chartData.js'
 import './App.css'
 const client = new W3CWebSocket('ws://city-ws.herokuapp.com/');
 class App extends Component {
@@ -77,6 +78,10 @@ class App extends Component {
           </tbody>
         </table>
 
+          <div className="chatsDarta"> 
+                    <h1>Air Quality Chart</h1>
+                    <Charts dataFromServer={dataFromServer}  />
+                  </div>
       </div>
     );
   }

@@ -100,3 +100,28 @@ only screen and (max-width: 760px),
 	td:nth-of-type(2):before { content: "Reading"; }
 	td:nth-of-type(3):before { content: "Last Update"; }
 }
+
+.chatsDarta {
+	text-align: center;
+}
+
+.barGraph {
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.polorGraph {
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+@media only screen and (min-width:320px) and (max-width: 768px) {
+	.barGraph {
+		width: 100%;
+	}
+	.polorGraph {
+		width: 100%;
+	}
+}
